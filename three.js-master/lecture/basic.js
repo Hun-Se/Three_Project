@@ -59,7 +59,7 @@ class App {
 			domControls.appendChild(domButton);
 
 			domButton.addEventListener("click", () => {
-				const animationName = document.innerHtml;
+				const animationName = domButton.innerHTML;
 				this.changeAnimation(animationName);
 			});
 			const animationAction = mixer.clipAction(animationClip);
